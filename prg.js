@@ -10,8 +10,7 @@ xmlhttp.open("GET", "https://api.blockcypher.com/v1/btc/main", true);
 xmlhttp.send();
 
 
-function startSearch()
-{
+function startSearch() {
     //var request = document.getElementById("search").value;
     
     var xmlhttp = new XMLHttpRequest();
