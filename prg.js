@@ -33,7 +33,7 @@ xmlhttp.onreadystatechange = function() {
         document.getElementById("demo3").innerHTML = jsonPretty;
     }
 };
-xmlhttp.open("GET", "https://api.blockcypher.com/v1/btc/main/blocks/294322?txstart=1&limit=1", true);
+xmlhttp.open("GET", "https://block.io/api/v2/get_balance/?api_key=BITCOIN", true);
 xmlhttp.send();
 
 
