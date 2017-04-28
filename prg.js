@@ -12,7 +12,7 @@ xmlhttp.send();
 
 function startSearch()
 {
-    var request = document.getElementById("search").value;
+    //var request = document.getElementById("search").value;
     
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
