@@ -39,7 +39,7 @@ xmlhttp.send();
 
 
 function startSearch() {
-    var url = document.getElementById("search").value;
+    //var url = document.getElementById("search").value;
     
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
@@ -53,3 +53,8 @@ function startSearch() {
     xmlhttp.send();
 }
 
+function homePageLoading() {
+    url = "https://api.blockcypher.com/v1/btc/main/blocks/294322?txstart=1&limit=1";
+    elementID = "https://emrin.github.io/X/bitcoin/index.html";
+    startSearch(url, elementID);
+}
