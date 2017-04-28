@@ -37,6 +37,18 @@ xmlhttp.open("GET", "https://block.io/api/v2/get_balance/?api_key=BITCOIN", true
 xmlhttp.send();
 
 
+//WS /blockchaininfo
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var myObj = this.responseText;
+        var jsonPretty = JSON.stringify(JSON.parse(myObj),null,2);
+        document.getElementById("demo3").innerHTML = jsonPretty;
+    }
+};
+xmlhttp.open("GET", "https://blockchain.info/fr/rawblock/$block_index", true);
+xmlhttp.send();
+
 
 function startSearch() {
     //var url = document.getElementById("search").value;
