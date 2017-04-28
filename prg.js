@@ -1,4 +1,4 @@
-/*var xmlhttp = new XMLHttpRequest();
+var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         var myObj = this.responseText;
@@ -36,7 +36,7 @@ xmlhttp.onreadystatechange = function() {
 xmlhttp.open("GET", "https://api.blockcypher.com/v1/btc/main/blocks/294322?txstart=1&limit=1", true);
 xmlhttp.send();
 
-*/
+
 
 function startSearch() {
     //var url = document.getElementById("search").value;
